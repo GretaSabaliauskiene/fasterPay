@@ -1,0 +1,89 @@
+<article class="menu-result">
+    <div class="menu-result__into">
+      <h2>Stored Widget Call</h2>
+      <p>
+        It shows a widget, where stored products in Products section of Merchant
+        Acoount are available for payment. Both subscription and one-time
+        payment are supported in out products section
+      </p>
+      <h3>Parameter:</h3>
+    </div>
+  <table class="menu-result__table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Required</th>
+        <th>Format</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody style="border: 1px solid #ccc;">
+      <tr>
+        <td>key</td>
+        <td>yes</td>
+        <td>String(32</td>
+        <td>
+          Sample: 24849849491651 <br>
+          Can be found in General Settings of <br>
+          the Project inside of your Merchant <br>
+          Account
+        </td>
+      </tr>
+      <tr>
+        <td>uld</td>
+        <td>yes</td>
+        <td>String(64)</td>
+        <td>Sample: test@paymentwall.com <br>
+            Not case-sensitive <br>
+            ID of the end-user in your system <br>
+            (usually it is an email) who is viewing <br>
+            the widget.The maximum length is 64.
+        </td>
+      </tr>
+      <tr>
+        <td>widget</td>
+        <td>yes</td>
+        <td>String</td>
+        <td>Sample: p1_1 <br>
+            Widget code.Can be obtained by <br>
+            Merchant Account -> Projects-> <br>
+            Widgets
+          </td>
+      </tr>
+      <tr>
+        <td>email</td>
+        <td>yes</td>
+        <td>String</td>
+        <td>Sample: test@paymentwall.com <br>
+            Paymentwall wil automatically send a <br>
+            payment receipt to the end-user
+          </td>
+      </tr>
+      <tr>
+        <td>timestamp</td>
+        <td>yes</td>
+        <td>String(10)</td>
+        <td>Sample: 1477985778 <br>
+            Unix timestamp of the current date
+          </td>
+      <tr>
+        <td>sign_version</td>
+        <td>no</td>
+        <td>String</td>
+        <td>Sample: 2,3 <br>
+            Signature Version.
+          </td>
+      </tr>
+      <tr>
+        <td>sign</td>
+        <td>no</td>
+        <td>String</td>
+        <td>Sample: 7633c3b060fa2ddd41283ff <br>
+            d4629ab40 <br>
+            Refer to <span>Signature Calculation</span>
+      </td>
+      </tr>
+      </tr>
+    </tbody>
+  </table>
+</article>

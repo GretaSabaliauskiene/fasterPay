@@ -585,4 +585,20 @@ h3 {
 .side-bar__row__title--active {
   color: #2e62ff;
 }
+
+.menu-result__table {
+  width: 100%;
+}
+
+.menu-result__table thead {
+  text-align: left;
+}
+
+.menu-result__table td {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-result__table tbody {
+  border: 1px solid #ccc;
+}
 /*# sourceMappingURL=main.css.map */
