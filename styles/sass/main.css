@@ -374,6 +374,10 @@ h3 {
   font-size: 1.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.4rem;
@@ -516,6 +520,10 @@ h3 {
   font-size: 1.8rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (min-width: 1024px) {
   body {
     font-size: 1.4rem;
@@ -563,7 +571,6 @@ h3 {
 }
 
 .side-bar a {
-  text-decoration: none;
   color: #484848;
   text-transform: capitalize;
   font-weight: normal;
@@ -600,5 +607,15 @@ h3 {
 
 .menu-result__table tbody {
   border: 1px solid #ccc;
+}
+
+.links-container .links-container__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.7rem 0 0.2rem;
+}
+
+.links-container a {
+  color: #2e62ff;
 }
 /*# sourceMappingURL=main.css.map */

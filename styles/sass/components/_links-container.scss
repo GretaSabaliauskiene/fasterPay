@@ -1,0 +1,12 @@
+@import "../abstracts/variables";
+
+.links-container {
+  .links-container__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.7rem 0 0.2rem;
+  }
+  a {
+    color: $active-link;
+  }
+}
