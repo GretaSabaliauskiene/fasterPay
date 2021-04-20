@@ -461,4 +461,26 @@ h3 {
     margin-top: 0;
   }
 }
+
+.code-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #282c35;
+  color: white;
+}
+
+.code-tabs .code-tabs__tab {
+  padding: 2rem;
+}
+
+.code-tabs .code-tabs__tab:hover {
+  border-bottom: 6px solid #f3bf49;
+}
+
+.tab--active {
+  border-bottom: 6px solid #f3bf49;
+}
 /*# sourceMappingURL=main.css.map */
