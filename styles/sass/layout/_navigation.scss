@@ -1,0 +1,59 @@
+@import "../abstracts/variables";
+
+.nav {
+  background: $main-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 3rem 1.5rem;
+  .nav__logo-container {
+    display: flex;
+  }
+  .nav__burger {
+    cursor: pointer;
+    &:hover {
+      opacity: 0.5;
+      transition: 0.5s;
+    }
+  }
+  .nav__burger__line {
+    display: block;
+    margin: 4px;
+    height: 3.5px;
+    width: 40px;
+    background: white;
+    margin-bottom: 1rem;
+  }
+  .nav__logo-title {
+    color: $accent-color;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  .nav__sign-up-container {
+    width: 100%;
+    text-align: end;
+    color: $menu-text-color;
+    margin-top: 2rem;
+  }
+
+  .nav__sign-up-container__button {
+    margin-left: 2.5rem;
+    border-radius: 0;
+    padding: 1rem 1rem;
+    background: none;
+    color: $menu-text-color;
+    border: 1px solid $menu-text-color;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav__burger {
+    display: none;
+  }
+  .nav .nav__sign-up-container {
+    width: auto;
+    display: block;
+    margin-top: 0;
+  }
+}
