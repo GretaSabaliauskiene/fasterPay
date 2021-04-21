@@ -421,6 +421,10 @@ a {
   background: #21242d;
 }
 
+.block {
+  padding: 3rem;
+}
+
 .nav {
   background: #21242d;
   display: -webkit-box;
@@ -495,11 +499,160 @@ a {
   }
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 40fr 40fr;
+      grid-template-columns: 20% 40fr 40fr;
+  -ms-grid-rows: 70px 400px 400px 400px 400px;
+      grid-template-rows: 70px 400px 400px 400px 400px;
+}
+
+.grid-container .code-example__title {
+  color: white;
+}
+
+.grid-container .side-col {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 6;
+}
+
+.grid-container .menu-result-table-col {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-end: 3;
+}
+
+.grid-container .parameter-table-col {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.grid-container .result-table-col {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+.grid-container .menu-result-intro-col {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.grid-container .links-col {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.grid-container .initialize-col {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.grid-container .stored-widget-col {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+.grid-container .results-col {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .grid-container .code-showcase-col {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .menu-result-intro-col {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .initialize-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .grid-container .parameter-table-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .grid-container .stored-widget-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    grid-row: 5;
+  }
+  .grid-container .result-table-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+  .grid-container .links-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .stored-widget-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .results-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .side-col {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .menu-result-table-col {
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .grid-container .code-example__title {
+    display: none;
+  }
+  .grid-container .side-col {
+    display: none;
+  }
+}
+
 .code-tabs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #282c35;
@@ -582,7 +735,6 @@ a {
       justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
   overflow: scroll;
-  padding: 2rem;
 }
 
 .side-bar .side-bar__row {
@@ -642,6 +794,10 @@ a {
   color: #2e62ff;
 }
 
+.links-container .code-example__title {
+  color: white;
+}
+
 .code-example__title {
   font-size: 2rem;
   font-weight: bold;
@@ -654,11 +810,19 @@ a {
 }
 
 .code-showcase {
-  padding: 2rem;
   color: white;
 }
 
 .code-showcase .code-example__title {
   color: white;
+}
+
+.menu-result .menu-result__title {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.code-example__container {
+  background: #282c35;
 }
 /*# sourceMappingURL=main.css.map */
