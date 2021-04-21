@@ -1,3 +1,5 @@
+@import "./variables";
+
 .code--purple {
   color: #9871aa;
 }
@@ -12,4 +14,12 @@
 }
 .code--orange {
   color: #d7a56a;
+}
+
+.link--text {
+  color: $active-link;
+}
+
+.main--color {
+  background: $main-color;
 }

@@ -413,6 +413,14 @@ a {
   color: #d7a56a;
 }
 
+.link--text {
+  color: #2e62ff;
+}
+
+.main--color {
+  background: #21242d;
+}
+
 .nav {
   background: #21242d;
   display: -webkit-box;
@@ -491,6 +499,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background-color: #282c35;
@@ -641,6 +650,15 @@ a {
 
 .code-example__container {
   background-color: #282c35;
+  color: white;
+}
+
+.code-showcase {
+  padding: 2rem;
+  color: white;
+}
+
+.code-showcase .code-example__title {
   color: white;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,75 @@
+<section class="code-showcase main--color">
+    <div class="code-tabs">
+      <div class="code-tabs__tab tab--active">Javascript</div>
+      <div class="code-tabs__tab">Java</div>
+      <div class="code-tabs__tab">PHP</div>
+      <div class="code-tabs__tab">.Net</div>
+      <div class="code-tabs__tab">Python</div>
+    </div>
+
+    <div class="links-container">
+      <h5 class="code-example__title">Library:</h5>
+      <a href="https://github.com/paymentwall/paymentwall-java"
+        >https://github.com/paymentwall/paymentwall-java</a
+      >
+      <h5 class="code-example__title">Request URL</h5>
+      <a href="https://api.com/paymentwall.com/api/subscription"
+        >https://api.com/paymentwall.com/api/subscription</a
+      >
+      <h5 class="code-example__title">Request method</h5>
+      <a href="https://api.com/paymentwall.com/api/subscription"
+        >https://api.com/paymentwall.com/api/subscription</a
+      >
+    </div>
+
+    <h5 class="code-example__title">Initialize</h5>
+    <div class="code-example__container initialize-container">
+      <pre>
+      <code>
+<span class="code--purple">import</span> com.paymentwall.java.Base;
+    
+        <span class="code--red">Base.</span><span class="code--blue">setAppKey(<span class="code--green">"YOUR_APPLICATION_CODE"</span>)</span>;
+        <span class="code--red">Base.</span><span class="code--blue">setECURITYKey(<span class="code--green">"YOUR_SECRET_KEY"</span>)</span>;
+        <span class="code--red">Base.</span><span class="code--blue">setApiType(<span class="code--red">"Base.<span class="code--orange">API_GOODS</span>"</span>)</span>;
+      </code>
+      </pre>
+    </div>
+
+    <h5 class="code-example__title">Stored Widget Call</h5>
+    <div class="code-example__container initialize-container">
+      <pre>
+        <code>
+<span class="code--purple">import</span> com.paymentwall.java.Widget;
+<span class="code--purple">import</span> .com.paymentwall.java.WidgetBuilder;
+<span class="code--purple">import</span> java.util.LinkedHashMap;
+    
+      WidgetBuilder widgetBuilder <span class="code--blue">=</span> <span class="code--purple">new</span> <span class="code--orange">WidgetBuilder</span>
+      (userid, widgetcode);
+    
+      <span class="code--red">widgetBuilder</span>.<span class="span code--blue">setExtraParams(</span><span class="code--purple">new</span> <span class="code--orange">LinkedHashMap</span>
+      <span class="code--blue"><</span><span class="code--orange">String</span>, <span class="code--orange">String</span><span class="code--blue">></span>(){
+          {
+            <span class="code--blue">put</span>(<span class="code--green">"email"</span>, email);
+            <span class="code--blue">put</span>(<span class="code--green">"timestamp"</span>, email);
+          }
+        });
+    
+        <span class="code--purple">Widget widget</span><span class="code--blue"> = </span><span class="code--red">widgetBuilder.</span><span class="code--blue">build</span>();
+        </code>
+      </pre>
+    </div>
+
+    <h5 class="code-example__title">Result Example</h5>
+    <div class="code-example__container result-container">
+        <pre>
+      <code>
+<span class="code--red">Widget</span><span class="span code--blue">getHtmlCode</span>();
+        </pre>
+    </div>
+    <pre>
+      <code>
+&lt;iframe src="<span class="link--text">https://api.paymentwall.com/api/rest/product/</span>" 
+width="750"frameborder="0" height="800"&lt;&gt;/iframe>
+      </code>
+    </pre>
+  </section>
