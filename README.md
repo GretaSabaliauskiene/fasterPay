@@ -1,3 +1,3 @@
 # FasterPay test task
 
-live preview
+live preview: https://faster-pay-test-task.netlify.app/
