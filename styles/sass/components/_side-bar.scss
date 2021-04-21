@@ -1,7 +1,8 @@
 @import "../base/typography";
-
-.side-bar {
+.side-col {
   background-color: $side-color;
+}
+.side-bar {
   color: $text-color;
   display: flex;
   flex-flow: column;

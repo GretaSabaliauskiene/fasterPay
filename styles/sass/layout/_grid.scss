@@ -1,7 +1,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 20% 40fr 40fr;
-  grid-template-rows: 70px 400px 400px 400px 400px;
+  grid-template-rows: 70px 400px 400px 400px 500px;
   .code-example__title {
     color: white;
   }
@@ -26,7 +26,6 @@
     grid-row-start: 5;
     grid-row-end: 6;
   }
-
   .menu-result-intro-col {
     grid-column-start: 2;
     grid-row-start: 1;
