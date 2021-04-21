@@ -1,0 +1,25 @@
+<div class="code-example__container initialize-container">
+  <h5 class="code-example__title">Stored Widget Call</h5>
+  <div class="initialize-container__initialize-code">
+    <pre>
+    <code>
+<span class="code--purple">import</span> com.paymentwall.java.Widget;
+          <span class="code--purple">import</span> .com.paymentwall.java.WidgetBuilder;
+          <span class="code--purple">import</span> java.util.LinkedHashMap;
+
+          WidgetBuilder widgetBuilder <span class="code--blue">=</span> <span class="code--purple">new</span> <span class="code--orange">WidgetBuilder</span>
+          (userid, widgetcode);
+
+          <span class="code--red">widgetBuilder</span>.<span class="span code--blue">setExtraParams(</span><span class="code--purple">new</span> <span class="code--orange">LinkedHashMap</span>
+          <span class="code--blue"><</span><span class="code--orange">String</span>, <span class="code--orange">String</span><span class="code--blue">></span>(){
+            {
+              <span class="code--blue">put</span>(<span class="code--green">"email"</span>, email);
+              <span class="code--blue">put</span>(<span class="code--green">"timestamp"</span>, email);
+            }
+          });
+
+          <span class="code--purple">Widget widget</span><span class="code--blue"> = </span><span class="code--red">widgetBuilder.</span><span class="code--blue">build</span>();
+    </code>
+  </pre>
+  </div>
+</div>
