@@ -502,8 +502,8 @@ a {
   display: grid;
   -ms-grid-columns: 20% 40fr 40fr;
       grid-template-columns: 20% 40fr 40fr;
-  -ms-grid-rows: 100px 70px 320px 266px 650px 400px 500px;
-      grid-template-rows: 100px 70px 320px 266px 650px 400px 500px;
+  -ms-grid-rows: 100px 70px 320px 266px 650px 400px;
+      grid-template-rows: 100px 70px 320px 266px 650px 400px;
 }
 
 .grid-container .code-example__title {
