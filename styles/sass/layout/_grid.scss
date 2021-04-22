@@ -1,14 +1,19 @@
 .grid-container {
   display: grid;
   grid-template-columns: 20% 40fr 40fr;
-  grid-template-rows: 70px 400px 400px 400px 500px;
+  grid-template-rows: 100px 70px 320px 266px 650px 400px 500px;
   .code-example__title {
     color: white;
   }
-  .side-col {
+  .menu-col {
     grid-column-start: 1;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-column: 1/4;
+  }
+  .side-col {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 7;
   }
   .menu-result-table-col {
     grid-column-start: 2;
@@ -18,17 +23,17 @@
   }
   .parameter-table-col {
     grid-column-start: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
   }
   .result-table-col {
     grid-column-start: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
   }
   .menu-result-intro-col {
     grid-column-start: 2;
-    grid-row-start: 1;
+    grid-row-start: 2;
   }
   .links-col {
     grid-column: 3/4;
@@ -48,48 +53,49 @@
   .grid-container {
     grid-template-columns: auto;
     grid-template-rows: auto;
-    .code-showcase-col {
+
+    .menu-col {
       grid-row: 1;
       grid-column: 1;
     }
-    .menu-result-intro-col {
+    .code-showcase-col {
       grid-row: 2;
+      grid-column: 1;
+    }
+    .menu-result-intro-col {
+      grid-row: 3;
       grid-column: 1;
     }
     .initialize-col {
       grid-column: 1;
-      grid-row: 3;
+      grid-row: 4;
     }
     .parameter-table-col {
       grid-column: 1;
-      grid-row: 4;
-    }
-    .stored-widget-col {
-      grid-column: 1;
       grid-row: 5;
     }
-    .result-table-col {
+    .stored-widget-col {
       grid-column: 1;
       grid-row: 6;
     }
-
-    .links-col {
+    .result-table-col {
       grid-column: 1;
-    }
-
-    .stored-widget-col {
-      grid-column: 1;
-    }
-    .results-col {
-      grid-column: 1;
+      grid-row: 7;
     }
     .side-col {
       grid-row: 1;
       grid-column: 1;
     }
-    .menu-result-table-col {
+    .links-col {
+      display: none;
+    }
+    .stored-widget-col {
       grid-column: 1;
     }
+    .results-col {
+      display: none;
+    }
+
     .code-example__title {
       display: none;
     }
