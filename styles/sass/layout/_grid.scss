@@ -35,6 +35,7 @@
     grid-column-start: 2;
     grid-row-start: 2;
   }
+
   .links-col {
     grid-column: 3/4;
   }
@@ -45,7 +46,9 @@
     grid-column: 3/4;
   }
   .results-col {
-    grid-column: 3/4;
+    grid-column-start: 3;
+    grid-row-start: 6;
+    color: white;
   }
 }
 
