@@ -484,6 +484,14 @@ a {
   background: none;
   color: #94959a;
   border: 1px solid #94959a;
+  cursor: pointer;
+}
+
+.nav .nav__sign-up-container__button:hover {
+  -webkit-box-shadow: 0px 1px 10px -1px #f3bf49;
+          box-shadow: 0px 1px 10px -1px #f3bf49;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media screen and (min-width: 768px) {
