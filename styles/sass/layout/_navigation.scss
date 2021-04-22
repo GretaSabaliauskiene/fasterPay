@@ -31,10 +31,7 @@
     margin-left: 1rem;
   }
   .nav__sign-up-container {
-    width: 100%;
-    text-align: end;
-    color: $menu-text-color;
-    margin-top: 2rem;
+    display: none;
   }
 
   .nav__sign-up-container__button {
@@ -52,6 +49,7 @@
     display: none;
   }
   .nav .nav__sign-up-container {
+    color: $menu-text-color;
     width: auto;
     display: block;
     margin-top: 0;
